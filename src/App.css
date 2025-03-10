@@ -1,0 +1,13 @@
+.sec2 {
+  margin: 2.5rem 0;
+  width: 100%;
+}
+
+.cards {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}

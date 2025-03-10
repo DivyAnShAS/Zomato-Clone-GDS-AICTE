@@ -1,0 +1,135 @@
+.navbar {
+    width: 100%;
+    height: 68px;
+    /* background-color: crimson; */
+    display: flex;
+    flex: wrap;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    position: absolute;
+    z-index: 2000;
+}
+
+.menuBar {
+    display: none;
+}
+
+.navItem {
+    list-style: none;
+    margin: 0px 15px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+.NavSec2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+.profileMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.profilePic {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.profileName {
+    margin: 0px 5px;
+}
+
+.profileBigMenu {
+    width: 150px;
+    height: auto;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    position: absolute;
+    top: 3rem;
+    right: -40px;
+}
+
+.profileTag {
+    padding: 10px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    letter-spacing: 0.7px;
+    color: rgb(28, 28, 28);
+}
+
+.profileTag:hover {
+    background-color: rgb(211, 202, 202);
+}
+
+.profileTag:hover:first-child {
+    background-color: rgb(211, 202, 202);
+    border-radius: 10px 10px 0px 0px;
+}
+
+.profileTag:hover:last-child {
+    background-color: rgb(211, 202, 202);
+    border-radius: 0px 0px 10px 10px;
+
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 426px) {
+    .menuBar {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menuIcon {
+        color: rgb(105, 105, 105);
+        font-weight: bold;
+    }
+
+    .logoName {
+        width: 130px;
+        height: 30px;
+    }
+
+    .navbar {
+        width: 100%;
+        height: 100vh;
+        background-color: white;
+        display: flex;
+        flex: wrap;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .navItem {
+        list-style: none;
+        margin: 20px 10px;
+        cursor: pointer;
+        text-decoration: none;
+        color: rgb(105, 105, 105);
+    }
+
+    .NavSec1 {
+        display: none;
+    }
+
+    .NavSec2 {
+        height: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+}
